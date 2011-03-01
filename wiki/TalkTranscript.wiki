@@ -173,14 +173,14 @@ run only on devices that support ES 2.0 (which is most of them).
 Now if you run this, you get a black screen. We can change the fill color and
 add an explicit glClear to our renderer to change this color. To do this, we
 call static functions on the GLES20 class and ignore the GL10 object that's
-passed in to the renderer functions. (rename |gl| to |unused|). Oh, and if you
-don't like having |GLES20.| in front of every gl call, you can add
+passed in to the renderer functions. (rename `gl` to `unused`). Oh, and if you
+don't like having `GLES20.` in front of every gl call, you can add
 {{{
   import static android.opengl.GLES20.*;
 }}}
-then it's no longer needed. As you've seen, |onDrawFrame| is called on every
-frame. |onSurfaceCreated| is called when the gl context is created, and
-|onSurfaceChanged| is called when the surface size changes (think rotation).
+then it's no longer needed. As you've seen, `onDrawFrame` is called on every
+frame. `onSurfaceCreated` is called when the gl context is created, and
+`onSurfaceChanged` is called when the surface size changes (think rotation).
 
 Gray screen, yay! This is how you get accelerated pixels on screen in Android.
 Lines written so far: ~50. And we have a dedicated render thread. Not too bad.
@@ -337,7 +337,7 @@ files get added to your apk.
 
 Before 2.3, you couldn't open resources from native code, you had to open the
 files from Java (or from C using JNI). Since 2.3, there's
-|AAssetManager_fromJava| and the functions in "android/assert_manager.h".
+`AAssetManager_fromJava` and the functions in `android/assert_manager.h`.
 
 Best practice:
 Make sure your bundled resources are in a format that doesn't need any
@@ -365,11 +365,11 @@ data into the currently bound vbo is:
 {{{
   void glBufferData(int target, int size, Buffer data, int usage)
 }}}
-The interesting parameter is |data|, which is a java nio Buffer. These buffers
+The interesting parameter is `data`, which is a java nio Buffer. These buffers
 come in two flavors: Backed by a regular java array, or backed by a raw memory
 region -- think something returned by malloc. The latter are called direct
-buffers. A direct buffer is allocated using |ByteBuffer.allocateDirect()|, and
-glBufferData() wants a direct byte buffer.
+buffers. A direct buffer is allocated using `ByteBuffer.allocateDirect()`, and
+`glBufferData()` wants a direct byte buffer.
 
 The naive way to load a resource into a direct buffer looks like this:
 {{{
