@@ -34,9 +34,7 @@ model appears much faster due to being bundled with the app. There is no
 transparency slider on the left, instead there are layer selectors up here on
 the right. There's a little animation when you switch layers. There's also a
 search box with a fly-to animation. And you can tap entities to get their names.
-So that's what I did. (I'm happy to announce that this app is publicly
-available in the Android Market starting today -- more of a coincidence than
-a carefully planned launch at GDC though.)
+So that's what I did.
 
 As I said, I started working on the Android port early this year, and it's my
 first Android app. I have two months of Android experience, which probably isn't
