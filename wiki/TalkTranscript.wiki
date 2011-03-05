@@ -1,6 +1,6 @@
 =OpenGL ES 2.0 graphics on Android: Lessons from Google Body=
 
-_This is is the (expanded) transcript of a talk that I gave at GDC 2011. The final version of the code that I discuss can be seen at https://code.google.com/p/gdc2011-android-opengl/source/browse/trunk/src/com/example/gdc11/GDC11Activity.java ._
+_This is is the (expanded) transcript of a talk that I gave at GDC 2011. The final version of the code that I discuss can be seen at https://code.google.com/p/gdc2011-android-opengl/source/browse/trunk/src/com/example/gdc11/GDC11Activity.java . You can also look at [https://docs.google.com/present/view?id=dgd55gfd_2g7b8wrgx the slides of the talk]._
 
 Hi! I'm Nico, and I will talk a bit about writing OpenGL apps for Android.
 
